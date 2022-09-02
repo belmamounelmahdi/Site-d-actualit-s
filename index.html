@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site d’information marocain d’actualités indépendant et participatif en ligne | Mediamar</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a48ec4751a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+    <div class="en_tete">
+   
+    <div id="date"><p>date: ../../..</p></div>
+    
+    <div><a href="/index.html"><img src="./img/LOGO Media mar.svg" alt="MEDIA MAR"></a></div>
+    <div><a href="#"><img class="i_t" src="./img/contacter.svg" alt="Nous Contacter"><p>Nous Contacter</p></a></div>
+    <div><a href=""><img class="i_t1" src="./img/connecter.svg" alt="Se connecter"><p>Se connecter</p></a></div>
+    <button type="button" class="btn btn-danger">S'inscrire</button>
+    <div><p class="méteohaut">...</p></div>
+     
+    </div>
+    <nav id="nav"  class="navbar navbar-dark bg-dark">
+        <ul>
+            <li><a id="clickmenu" href="#">Menu</a></li>
+            <li><a href="./à-la-une.html">À la une</a></li>
+            <li><a href="./vidéos.html">Vidéos</a></li>
+        </ul>
+        <ul>
+            <li><a href="météo.html" class="link-danger">Météo</a></li>
+            <li><a href="./maps.html" class="link-danger">Maps</a></li>
+            <li><a href="./évenement.html" class="link-danger">Evenement</a></li>
+        </ul> 
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </nav>
+    </header>
+
+    <div class="menu">
+        <a href="#"><img src="./img/LOGO Media mar.svg" alt="Media Mar"></a>
+        <button id="close">X</button>
+        <br>
+        <div class="btn_menu">
+        <button  type="button" class="btn btn-danger">Se connecter</button>
+        <button type="button" class="btn btn-primary">S'inscrire</button>
+        </div>
+        <form id="srch" class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        <ul class="liste_menu">
+            <li><a href="./à-la-une.html">À la une</a></li><hr>
+            <li><a href="./vidéos.html">Vidéos</a></li><hr>
+            <li><a href="#">Enquêtes</a></li><hr>
+            <li><a href="#">Dossiers</a></li><hr>
+            <li><a href="#">Séries</a></li><hr>        
+            <li><a href="#">Fil d'actualité</a></li><hr>
+            <li><a href="#">Multimédia</a></li>
+            
+        </ul>
+    </div>
+<div class="slider">
+  <img src="./img/absolute/center-server.png" alt=""  class="img__slider active">
+  <img src="./img/absolute/economics.png" alt="" class="img__slider">
+  <img src="./img/absolute/temperature.png" alt="" class="img__slider">
+  <div class="next">
+    <i class="fa-solid fa-circle-chevron-right"></i>
+  </div>
+  <div class="back">
+    <i class="fa-solid fa-circle-chevron-left"></i>
+  </div>
+  
+
+</div>
+
+<div class="flex-center">  
+<div id="liveMéteo">
+  <div id="cloud">
+    <img class="skyM"  id="wheatherImage" src="" >
+    
+  </div>
+  <div id="weather"><h2></h2></div>
+  <div id="infoW">
+      <p id="hmdt">Humidité :</p>
+      <p id="vent">Vent :</p>
+  </div>
+  <div id="city"><h3></h3></div>
+</div>
+</div>
+
+
+
+
+
+
+  <div id="er-cont" style="display:none;">
+  <div class="actu">
+    <h2>Votre actualité</h2>
+    <p>Retrouvez toute l'actualité de votre ville et suivez en temps réels les moments forts de la vie autour de vous.</p>
+    <button type="button" class="btn btn-white">Voir les actualités</button>
+  </div>
+  <div class="météo">
+    <h2>Météo</h2>
+    <p>Prévisions météorologiques de votre ville. Vous trouverez toutes les données sur la météo pour votre ville.</p>
+    <button id="demo" type="button" class="btn btn-white">Voir la météo</button>
+  </div>
+  <div class="évenement" style="display: none;">
+    <h2>Agenda événementiel</h2>
+    <p>Découvrez l'agenda complet des événements organisés dans votre ville au courant se ce mois.
+      Entre soirées, spectacles, festivals, concerts, conférences, expositions ou encore animations pour enfants, voici ce qui se passera dans votre ville.</p>
+    <button type="button" class="btn btn-white">Voir les actualités</button>
+  </div>
+</div>
+
+
+
+
+<div id="API">
+
+<div id="coronaVirus">
+  <div >
+    <img class="covidGif" src="./img/coronavirus.gif" alt="">
+  </div>
+
+</div>
+
+<div id="center">
+  <div id="breaking">
+    <div>
+  <img  src="./img/Breaking.gif" alt="">
+</div>
+<br>
+<br>
+ </div>
+<div class="inform">
+  <h3>Conseil de défense sur l’énergie : Ce qu’il faut retenir du plan gouvernemental</h3>
+  <img src="./img/info1.jpg" alt="">
+  <p>Ce vendredi 2 septembre, la ministre de la de la Transition énergétique a détaillé le compte-rendu du Conseil de défense sur l’énergie.</p>
+  <p>ÉNERGIE - « La clé, pour passer l’hiver, c’est la mobilisation générale. » À l’issue du Conseil de défense sur l’énergie souhaité par le chef de l’État ce vendredi 2 septembre, Agnès Pannier-Runacher s’est exprimée sur les leviers activés par la France pour faire face à la menace d’une crise énergétique dans le contexte de la guerre en Ukraine. <a href="https://www.huffingtonpost.fr/france/article/conseil-de-defense-sur-l-energie-ce-qu-il-faut-retenir-du-plan-gouvernemental_207254.html">Lire la suite</a></p>   
+  <h5>France 02/09/2022 16:13 Actualisé le 02/09/2022 16:47</h5>
+</div>
+<hr>
+<div class="inform">
+  <h3>Conseil de défense sur l’énergie : Ce qu’il faut retenir du plan gouvernemental</h3>
+  <img src="./img/info2.jpg" alt="">
+  <p>Cristina Kirchner, la vice-présidente de l’Argentine, victime d’une tentative d’assassinat</p>
+    <p>L’Argentine était sous le choc, vendredi 2 septembre, au lendemain d’une tentative d’assassinat à Buenos Aires de la vice-présidente, Cristina Kirchner, qui a suscité des condamnations unanimes, dans le pays comme à l’étranger. <a href="https://www.lemonde.fr/international/article/2022/09/02/cristina-kirchner-victime-d-une-tentative-d-assassinat-le-president-alberto-fernandez-decrete-un-jour-ferie-national-en-argentine_6139942_3210.html">Lire la suite</a></p>   
+  <h5>Le Monde avec AFP 02/09/2022 à 11h03, mis à jour à 17h24 </h5>
+</div>
+<hr>
+<div class="inform">
+  <h3>Meta veut des options payantes pour Facebook Instagram et WhatsApp</h3>
+  <img src="./img/info3.webp" alt="">
+  <p>Une équipe baptisée New Monetization Experiences aura pour but de développer des fonctionnalités exclusives, accessibles sur abonnement.</p>
+    <p>Facebook, WhatsApp, Messenger, et Instagram pourraient prochainement proposer des options payantes. C’est en tout cas ce sur quoi va travailler une équipe créée pour l’occasion, appelée « New Monetization Experiences ». <a href="https://siecledigital.fr/2022/09/01/meta-options-payantes-facebook-instagram-whatsapp/">Lire la suite</a></p>   
+  <h5> Valentin Blanchot - @vblanchot 01/09/2022 à 11h03, mis à jour à 13h28 </h5>
+</div>
+<hr>
+<div class="inform">
+  <h3>Une fausse application Google mine des cryptomonnaies sur des milliers de PC</h3>
+  <img src="./img/info4.jpg" alt="">
+  <p>Une fausse application Google Traduction se propage sur la toile. Elle cache un malware capable de miner du Monero, une cryptomonnaie très appréciée des cybercriminels, avec l’ordinateur des internautes.</p>
+    <p>Les chercheurs en sécurité de Check Point ont découvert la présence d’un malware au sein d’une fausse application Google Traduction. Proposé par un développeur turc appelé Nitrokod, le logiciel prend la forme d’une application de bureau Google Traduction destinée aux ordinateurs Windows. <a href="https://www.01net.com/actualites/fausse-application-google-mine-cryptomonnaies-milliers-pc.html">Lire la suite</a></p>   
+  <h5> 2 septembre 2022 à 08:01 </h5>
+</div>
+<hr>
+<div class="inform">
+  <h3>Apple imite Samsung et c’est une bonne nouvelle pour les possesseurs d’iPhone</h3>
+  <img src="./img/info5.webp" alt="">
+<p>Il y a quelques semaines, Samsung a mis à jour l’un de ses smartphones sortis il y a plusieurs années pour lui offrir une optimisation utile pour ses utilisateurs. C’est désormais à Apple de faire de même avec de vieux modèles d’iPhone.</p>    
+<p>Malgré la pléthore de nouveaux smartphones qui arrivent chaque mois sur le marché, des millions de mobinautes cherchent à conserver leur téléphone mobile le plus longtemps possible. Il faut dire que les smartphones sont souvent très chers et même lorsque l’on parle de modèles de milieu de gamme, il faut systématiquement débourser plusieurs centaines d’euros pour en faire l’acquisition. <a href="https://www.jeuxvideo.com/news/1628372/apple-imite-samsung-et-c-est-une-bonne-nouvelle-pour-les-possesseurs-d-iphone.htm">Lire la suite</a></p>   
+  <h5> Publié le 02/09/2022 à 10:30 </h5>
+</div>
+<hr>
+<div class="inform">
+  <h3>Lindt, Danone et Kiri accusés de « shrinkflation » sur les produits alimentaires</h3>
+  <img src="./img/info6.jpg" alt="">
+<p>L’ONG Foodwatch met en cause six marques de la grande distribution qui ont modifié la taille de leurs produits-phares ces dernières années pour ne pas trop augmenter les prix.</p>    
+<p>Nestlé, Lindt & Sprüngli ou encore Danone ont trouvé la solution pour ne pas trop augmenter les prix en rayons et risquer de faire fuir des clients inquiets pour leur portefeuille : ils réduisent discrètement la quantité, voire la qualité, de certains de leurs produits, dénonce l’association Foodwatch dans une étude reprise par l’émission « Complément d’enquête », diffusée jeudi 1er septembre sur France 2. <a href="https://www.lemonde.fr/economie/article/2022/09/02/grande-distribution-lindt-danone-et-kiri-accuses-de-shrinkflation-sur-les-produits-alimentaires_6139924_3234.html">Lire la suite</a></p>   
+  <h5> Publié le 02/09/2022  09h21, mis à jour à 13h30  </h5>
+</div>
+<hr>
+<div class="inform">
+  <h3>Le Molay-Littry : l'auteur présumé des coups de feu est mort</h3>
+  <img src="./img/info7.webp" alt="">
+  <p>L'homme présumé d'avoir tiré sur une personne dans le bourg de Molay-Littry (Calvados), ce vendredi 2 septembre, est décédé. Il s'agit d'un sexagénaire. Les jours de la personne blessée ne sont pas en danger. Les lieux sont désormais en sécurité.</p>
+  <p>L'auteur présumé des coups de feu qui ont retenti vers 8 heures, ce vendredi 2 septembre matin au Molay-Littry (Calvados), près de Bayeux, est mort. D'après la procureure de la République de Caen, Amélie Cladière, "il s'agit d'un sexagénaire, dont le corps sans vie a été découvert aux alentours de 13 heures par les hommes du GIGN." On ne connaît pas encore les circonstances précises de son décès. Une enquête a été ouverte. <a href="https://www.francebleu.fr/infos/faits-divers-justice/le-molay-littry-la-ville-coupee-a-la-circulation-un-homme-retranche-1662109130">Lire la suite</a></p>   
+  <h5>Vendredi 2 septembre 2022 à 10:59 - Par Cyrielle Le Houëzec, Marie Martirossian  </h5>
+</div>
+<hr>
+<div class="inform">
+  <h3>Internet et la téléphonie mobile menacés par les coupures d'électricité cet hiver</h3>
+  <img src="./img/info8.webp" alt="">
+  <p>INFO LE FIGARO - Les opérateurs télécoms alertent sur les conséquences de procédures de délestage qui pourraient toucher leurs réseaux fixe et mobile.</p>
+  <p>
+    Les opérateurs télécoms tirent la sonnette d'alarme. Ils s'inquiètent des conséquences que pourraient avoir sur leur réseau des coupures d'électricité. Alors qu'un conseil de défense abordant le sujet doit avoir lieu vendredi, la Fédération française des opérateurs télécoms (FFTelecoms) met en garde contre un scénario catastrophe. «Sans électricité, les relais mobiles ne fonctionnent plus, or 95% des communications d'urgence transitent par ces réseaux, prévient Liza Bellulo, secrétaire générale de Bouygues Telecom et présidente de la FFTelecoms. Pour réduire les dépenses de transports, il pourrait être demandé aux salariés qui le peuvent de télétravailler.  <a href="https://www.lefigaro.fr/secteur/high-tech/menace-sur-les-connexions-internet-et-la-telephonie-mobile-cet-hiver-20220831">Lire la suite</a></p>   
+  <h5>Par Elsa Bembaron Publié le 31/08/2022 à 18:30, mis à jour hier à 20:42  </h5>
+</div>
+<hr>
+<div class="inform">
+  <h3>Imam en fuite : un mandat d'arrêt européen délivré par la France contre Hassan Iquioussen</h3>
+  <img src="./img/info9.jpg" alt="">
+  <p>Introuvable en France depuis la validation de son expulsion du territoire français, l'imam serait réfugié en Belgique.</p>
+  <p>Hassan Iquioussen fait désormais l'objet d'un mandat d'arrêt européen. Il s’agit d’une procédure judiciaire et policière simplifiée qui permet à l’autorité judiciaire de l’Etat membre émetteur de se voir remettre un individu présent dans un autre Etat membre pour qu’il soit jugé ou vienne exécuter sa peine. Un mandat émis par une autorité judiciaire d’un pays de l’Union européenne est valable sur l’ensemble du territoire de l’UE. <a href="https://www.lindependant.fr/2022/09/02/imam-en-fuite-un-mandat-darret-europeen-delivre-par-la-france-contre-hassan-iquioussen-10519305.php#">Lire la suite</a></p>   
+  <h5>Faits divers, Société Publié le 02/09/2022 à 13:53 , mis à jour à 13:55  </h5>
+</div>
+<hr>
+<div class="inform">
+  <h3>Russie : Vladimir Poutine n'assistera pas aux funérailles de Mikhaïl Gorbatchev</h3>
+  <img src="./img/info10.webp" alt="">
+  <p>Les funérailles du dernier dirigeant de l'URSS, mort mardi à l'âge de 91 ans, se dérouleront samedi.</p>  
+  <p>Vladimir Poutine n'assistera pas aux funérailles de Mikhaïl Gorbatchev, mort mardi à l'âge de 91 ans, a annoncé jeudi 1er septembre le porte-parole de la présidence russe. "Nous savons que la cérémonie principale sera le 3 septembre, ainsi que les funérailles, mais l'emploi du temps du président ne lui permettra pas d'être là", a déclaré Dmitri Peskov. 
+
+    L'héritage de Mikhaïl Gorbatchev, dernier dirigeant de l'URSS, est controversé et source de rancœur en Russie. Selon des images diffusées à la télévision, Vladimir Poutine s'est déjà rendu jeudi à l'Hôpital clinique central (TSKB) de Moscou, où est mort Mikhaïl Gorbatchev, pour lui rendre hommage. <a href="https://www.francetvinfo.fr/monde/russie/vladimir-poutine/russie-vladimir-poutine-n-assistera-pas-aux-funerailles-de-mikhail-gorbatchev_5337250.html">Lire la suite</a></p>   
+  <h5>franceinfo avec AFP Publié le 01/09/2022 16:21
+    Mis à jour le 01/09/2022 16:37 </h5>
+</div>
+<hr>
+</div>
+
+<div id="allMétéo">
+  <div>
+  <img class="gifImg" src="./img/weather/weather_animated.gif" alt="">
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  <img id="athan" src="./img/athan.png" alt="button">
+  <iframe id="iframe" style="width: 182px; height: 358px; border: 1px solid #ddd;" scrolling="no" src="https://www.islamicfinder.org/prayer-widget/"> </iframe>
+
+
+<a href="#"> <img class="buttonHaut" src="./img/haut.png" alt="button"></a>
+
+
+<footer>
+<div class="footer-1">
+  <div class="newLetters-foot">
+    <h3>Newsletters</h3>
+    <p>Recevez chaque jour les titres à la Une</p>
+  </div>
+  <div class="btnFoot1">
+    <button type="button" class="btn btn-white">Inscrivez-vous</button>
+  </div>
+  <div class="socialMedia">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+  </div>
+  <hr>
+  <div class="leJournal-foot">
+    <h3>Le Journal</h3>
+    <ul>
+      <li><a href="#">International</a></li>
+      <li><a href="#">Economie</a></li>
+      <li><a href="#">Culture</a></li>
+      <li><a href="#">Dossiers</a></li>
+      <li><a href="#">Fil d’actualités</a></li>
+    </ul>
+  </div>
+  <div class="leStudio-foot">
+    <h3>Le Studio</h3>
+    <ul>
+      <li><a href="#">Vidéos</a></li>
+      <li><a href="#">Podcasts</a></li>
+      <li><a href="#">Documentaires</a></li>
+      <li><a href="#">Portfolios</a></li>
+      <li><a href="#">Panoramiques</a></li> 
+    </ul>
+  </div>
+  <div class="leClub-foot">
+    <h3>Le Club</h3>
+    <ul>
+      <li><a href="#">Depuis 48 heures</a></li>
+      <li><a href="#">Les blogs</a></li>
+      <li><a href="#">Les éditions</a></li>
+      <li><a href="#">L’agenda</a></li>
+      <li><a href="#">La charte</a></li>
+    </ul>
+  </div>
+  <div class="àPropos-foot">
+    <h3>À Propos</h3>
+    <ul>
+      <li><a href="#">Qui sommes-nous ?</a></li>
+      <li><a href="#">Besoin d’aide ?</a></li>
+      <li><a href="#">Nous contacter</a></li>
+      <li><a href="#">Partager des documents</a></li>
+      <li><a href="#">Plan du site</a></li>
+    </ul>
+  </div>
+</div>
+  <hr>
+
+  
+</footer>
+
+
+<script src="./js/main.js"></script>
+</body>
+</html>
