@@ -200,20 +200,23 @@ fetch('https://covid-193.p.rapidapi.com/statistics', corona)
  
 function infoCorona(statistics){
 var res = statistics.response
- for(i=0; i<res.length-192; i++){
+ for(i=0; i<res.length-120; i++){
 
     var country = res[i].country
     var cas = res[i].cases.new
     var recovered = res[i].cases.recovered
     var deaths = res[i].deaths.new
-
+    if(deaths == null){
+      deaths = "0"
+    }
+    if(cas == null){
+      continue
+    }
     var divcovid = '<div id="left"><h4 id="country">'+country+'</h4><p id="newCases">Cas confirmés: '+cas+'</p><p id="newDeaths">Décédés: '+deaths+'</p><p id="recovered">Guéris: '+recovered+'</p></div><br></br>'
 
     document.querySelector("#coronaVirus").innerHTML+=divcovid
 
-    if(res[i] == "null"){
-      divcovid.style.display="none"
-    }
+   
   } 
   
 }
@@ -280,11 +283,20 @@ for( i=0; i<contentIn.length; i++) {
 	
 
 var btnAthan = document.getElementById("athan");
-
+var nbrDeClicsAdan=0
 
 btnAthan.addEventListener('click', openList) 
 function openList() {
+  nbrDeClicsAdan++;
+
 var horairePriére = document.getElementById("iframe")
-  horairePriére.style.display = "flex";
+  if(nbrDeClicsAdan%2==0)
+  {
+    horairePriére.style.display = "none";
+  }else
+  {
+    horairePriére.style.display = "flex";
+  }
+  
  
 }

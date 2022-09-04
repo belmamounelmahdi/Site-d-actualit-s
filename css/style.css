@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .en_tete :nth-child(2){
     width: 250px;
     height: 100px;
@@ -62,8 +66,9 @@
 }
 #nav{
     position: sticky;
-    top: 0;
-    z-index: 1020;
+  top: 0px;
+    
+   
 }
 #nav :nth-child(1){
     list-style: none;
@@ -86,7 +91,9 @@
     display: none; /* display: flex;*/
     flex-direction: column;
     width: 400px;
+    
     position: absolute;
+    z-index: 100;
     background-color: white;
 
 }
@@ -276,10 +283,10 @@ list-style: none;
 
 
 #left{
-    width: 200px;
+    width: 100%;
     height: 180px;
     padding: 5px;
-    margin-left: 2%;
+    
     box-shadow: 5px 5px 10px pink;
 }
 
@@ -315,7 +322,7 @@ list-style: none;
 }
 
 #allMétéo {
-    width: 250px;
+    width: 20%;
 }
 
 
@@ -345,7 +352,19 @@ list-style: none;
     top: 50vh;
 
 }
-
+#bourse {
+    position: fixed;
+    left: 40px;
+    top: 65vh;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;   
+}
+#listeMarché {
+    display: none;
+    left: 120px;
+    top: 50vh;
+}
 
 
 
@@ -422,4 +441,12 @@ footer{
 }
 .footer-1 a:hover{
     color: #007bff;
+}
+
+#coronaVirus{
+    width: 20%;
+}
+#center{
+    width: 60%;
+    padding-left: 5%;
 }
